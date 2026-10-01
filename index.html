@@ -1,64 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trustworthy and Secure AI Lab</title>
-  <style>
-    body {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 0 20px;
-      font-family: system-ui, sans-serif;
-      line-height: 1.7;
-      color: #1f2937;
-      background: #f8fafc;
-    }
-    h1, h2 { color: #153e75; }
-    a { color: #0369a1; }
-    section { margin-top: 36px; }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trustworthy and Secure AI Lab at the Department of Computer Engineering, Sharif University of Technology.">
+<title>Trustworthy and Secure AI Lab | Sharif University of Technology</title>
+<style>
+:root{--ink:#edf3f9;--muted:#9fadc0;--blue:#77e5d2;--accent:#77e5d2;--line:#ffffff16;--paper:#101927;--bg:#0a111e}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;font:16px/1.8 Inter,"Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--bg)}::selection{background:#77e5d2;color:#0a111e}a{color:var(--blue);text-underline-offset:5px}a:hover{color:white}.wrap{max-width:1180px;margin:auto;padding:0 32px}.skip{position:absolute;left:12px;top:-100px;background:var(--paper);padding:12px;z-index:20}.skip:focus{top:10px}header{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line);background:#0a111ef2;backdrop-filter:blur(20px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 0}.brand{font-size:14px;line-height:1.4;max-width:220px;font-weight:750;text-decoration:none;color:white;display:flex;align-items:center;gap:12px}.brand-mark{display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;border-radius:12px;background:white;overflow:hidden}.brand-mark img{width:100%;height:100%;object-fit:contain;padding:3px}.brand-mark img[hidden]{display:none}.brand-mark svg[hidden]{display:none}.brand-mark svg{width:34px;height:34px}.brand:before{display:none;content:'T';display:grid;place-items:center;flex-shrink:0;width:36px;height:36px;color:var(--bg);background:var(--accent);border-radius:10px;font-size:22px}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none}nav a:last-child{color:var(--accent)}.hero{overflow:hidden;position:relative;padding:110px 0 100px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 85% 40%,#1f5b6140,transparent 55%),radial-gradient(ellipse at 15% 5%,#49338328,transparent 50%)}.hero:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff04 1px,transparent 1px),linear-gradient(90deg,#ffffff04 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent)}.hero-layout{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:750;color:var(--accent);display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';width:7px;height:7px;background:var(--accent);border-radius:50%;box-shadow:0 0 20px #77e5d2}h1{font-size:clamp(42px,5.6vw,76px);line-height:1.06;letter-spacing:-.055em;margin:25px 0 28px;font-weight:780}h1 em{font-style:normal;background:linear-gradient(100deg,#77e5d2,#b0bdff);color:transparent;background-clip:text}h2{font-size:clamp(28px,3.5vw,42px);letter-spacing:-.04em;line-height:1.2;margin:0 0 28px}h3{font-size:19px;line-height:1.45;margin:0 0 10px;letter-spacing:-.015em}.lead{font-size:18px;max-width:790px;color:var(--muted)}.button{display:inline-flex;align-items:center;gap:20px;background:var(--accent);color:var(--bg);padding:13px 22px;border-radius:8px;text-decoration:none;margin-top:18px;font-size:14px;font-weight:750;transition:transform .2s,background .2s}.button:hover{background:#acf6e9;color:var(--bg);transform:translateY(-3px)}.button:after{content:'↗';font-size:20px}.hero-links{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.hero-links>a:not(.button){font-size:14px;text-decoration:none;margin-top:18px}.visual{width:100%;max-width:430px;justify-self:center;filter:drop-shadow(0 0 40px #64d6bf20)}.hero-meta{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);display:flex;gap:30px;color:var(--muted);font-size:12px;letter-spacing:.04em}.hero-meta span:before{content:'+';color:var(--accent);margin-right:9px}section{padding:86px 0;border-bottom:1px solid var(--line)}.soft{background:linear-gradient(120deg,#101927,#0d1522)}.section-kicker{color:var(--accent);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{padding:30px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,#ffffff06,#ffffff02);transition:border-color .2s,transform .2s}.card:hover{border-color:#77e5d24d;transform:translateY(-4px)}.card p{margin:8px 0 0;color:var(--muted)}.number{font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.08em;color:var(--accent);font-weight:650;display:block;margin-bottom:44px}.person{display:flex;gap:38px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(110deg,#77e5d20a,#ffffff02)}.photo{position:relative;flex-shrink:0;width:200px;height:240px;border-radius:12px;overflow:hidden;background:radial-gradient(circle at 50% 30%,#324b60,#182331);display:grid;place-items:center;color:#bac8d6;text-align:center;font-size:13px}.photo:before{content:'';position:absolute;width:80px;height:80px;top:32px;border-radius:50%;background:#ffffff08}.photo:after{content:'';position:absolute;width:160px;height:130px;top:124px;border-radius:80px 80px 0 0;background:#ffffff06}.photo span{z-index:1;margin-top:80px}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}.photo img[hidden]{display:none}.student{padding:16px 16px 24px}.student .photo{width:100%;height:250px;margin-bottom:22px}.student h3,.student p{margin-left:10px;margin-right:10px}.person-text{max-width:680px}.person-text h3{font-size:28px}.role{color:var(--accent)!important;font-size:13px;font-weight:650;margin:0 0 12px!important}.placeholder{color:var(--muted);font-size:14px}.group{margin-top:52px}.group>h3{font-size:23px;margin-bottom:22px}.undergrads{padding-left:22px;color:var(--muted)}.undergrads li{padding:10px 0}.publication{padding:28px 30px;border:1px solid var(--line);border-radius:14px;background:#ffffff03}.publication h3{font-size:23px}.publication p{margin:5px 0;color:var(--muted)}details{border-top:1px solid var(--line);padding:22px 0}summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;position:relative;padding-right:35px}summary::-webkit-details-marker{display:none}summary:after{content:'+';position:absolute;right:8px;color:var(--accent);font-size:23px;line-height:1}details[open] summary:after{content:'−'}details p{max-width:850px;color:var(--muted)}address{font-style:normal;border-left:2px solid var(--accent);padding-left:20px;margin-top:30px;color:var(--muted);font-size:14px}address strong{color:white}footer{padding:35px 0;font-size:13px;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:20px}:focus-visible{outline:3px solid var(--accent);outline-offset:5px}@media(max-width:900px){.hero-layout{grid-template-columns:1fr}.visual{max-width:310px}.hero{padding:65px 0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{align-items:flex-start;flex-direction:column;gap:16px}.brand{max-width:none}nav{gap:18px}.hero-meta{flex-wrap:wrap;gap:15px}}@media(max-width:560px){.wrap{padding:0 22px}.grid{grid-template-columns:1fr}.person{align-items:flex-start;flex-direction:column;padding:22px}.person .photo{width:100%;height:280px}section{padding:56px 0}nav{gap:13px}nav a{font-size:12px}.hero{padding:48px 0}.visual{max-width:250px}.hero-meta{margin-top:30px}footer .wrap{flex-direction:column}h1{font-size:46px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.button{transition:none}.card:hover,.button:hover{transform:none}}
+.brand:before{display:none}.lab-logo{display:flex;align-items:center;gap:14px;margin-bottom:24px}.lab-logo .brand-mark{width:76px;height:76px;border-radius:18px}.lab-logo .brand-mark svg{width:58px;height:58px}.lab-logo-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* Light theme */
+:root{--ink:#182b40;--muted:#596a7e;--blue:#096b70;--accent:#087e78;--line:#dce5ed;--paper:#f3f7fa;--bg:#ffffff}
+::selection{background:#c4f3e8;color:#182b40}
+header{background:#fffffff2;box-shadow:0 2px 16px #182b4005}
+.brand{color:var(--ink)}
+.brand-mark{border:1px solid var(--line);box-shadow:0 3px 12px #182b4006}
+a:hover{color:#503ea4}
+.hero{background:radial-gradient(ellipse at 85% 40%,#c9efe65c,transparent 55%),radial-gradient(ellipse at 15% 5%,#e5defc66,transparent 50%),#f8fbfd}
+.hero:before{background-image:linear-gradient(#182b4005 1px,transparent 1px),linear-gradient(90deg,#182b4005 1px,transparent 1px)}
+h1 em{background-image:linear-gradient(100deg,#087e78,#6551b3)}
+.eyebrow:before{box-shadow:0 0 16px #087e7833}
+.button{color:white;box-shadow:0 5px 15px #087e781a}
+.button:hover{background:#075f5b;color:white}
+.soft{background:linear-gradient(120deg,#f5f8fb,#eef5f7)}
+.card{background:white;box-shadow:0 5px 24px #182b4005}
+.card:hover{border-color:#087e7870;box-shadow:0 12px 32px #182b400b}
+.person{background:linear-gradient(110deg,#eaf6f3,#ffffff);box-shadow:0 8px 30px #182b4005}
+.photo{background:radial-gradient(circle at 50% 30%,#e2edf0,#cddde5);color:#42586e}
+.photo:before,.photo:after{background:#36577312}
+.publication{background:white;box-shadow:0 5px 24px #182b4005}
+address strong{color:var(--ink)}
+.visual{filter:drop-shadow(0 10px 35px #087e7814)}
+
+</style>
 </head>
 <body>
-  <header>
-    <h1>Trustworthy and Secure AI Lab</h1>
-    <p>Sharif University of Technology</p>
-    <p>
-      We study the security, privacy, and trustworthiness
-      of artificial intelligence systems.
-    </p>
-  </header>
-
-  <section>
-    <h2>People</h2>
-    <p>Principal Investigator: [Your name]</p>
-    <p>Lab members will be listed here.</p>
-  </section>
-
-  <section>
-    <h2>Research</h2>
-    <p>Add your research areas and ongoing projects here.</p>
-  </section>
-
-  <section>
-    <h2>Publications</h2>
-    <p>Add links to papers and their code repositories here.</p>
-  </section>
-
-  <section>
-    <h2>Teaching</h2>
-    <ul>
-      <li>
-        <a href="/security-and-privacy-in-ml/">
-          Security and Privacy in ML
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: [Your academic email]</p>
-  </section>
-</body>
-</html>
+<a href="#main" class="skip">Skip to content</a>
+<header><div class="wrap"><div class="nav"><a class="brand" href="#"><span class="brand-mark"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="#111"/><circle cx="76" cy="24" r="16" fill="#111"/><ellipse cx="50" cy="55" rx="38" ry="36" fill="white" stroke="#111" stroke-width="3"/><ellipse cx="34" cy="51" rx="11" ry="15" transform="rotate(25 34 51)" fill="#111"/><ellipse cx="66" cy="51" rx="11" ry="15" transform="rotate(-25 66 51)" fill="#111"/><circle cx="36" cy="48" r="3" fill="white"/><circle cx="64" cy="48" r="3" fill="white"/><path d="M43 65Q50 61 57 65L50 72Z" fill="#111"/><path d="M50 72v5m-10 0q10 9 20 0" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg><img src="images/lab-logo.png" alt="Trustworthy and Secure AI Lab panda logo" onerror="this.hidden=true" onload="this.previousElementSibling.hidden=true"></span><span>Trustworthy and Secure AI Lab</span></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#people">People</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#join">Join Us</a></nav></div></div></header>
+<main id="main">
+<div class="hero"><div class="wrap"><div class="hero-layout"><div><div class="lab-logo"><span class="brand-mark"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="#111"/><circle cx="76" cy="24" r="16" fill="#111"/><ellipse cx="50" cy="55" rx="38" ry="36" fill="white" stroke="#111" stroke-width="3"/><ellipse cx="34" cy="51" rx="11" ry="15" transform="rotate(25 34 51)" fill="#111"/><ellipse cx="66" cy="51" rx="11" ry="15" transform="rotate(-25 66 51)" fill="#111"/><circle cx="36" cy="48" r="3" fill="white"/><circle cx="64" cy="48" r="3" fill="white"/><path d="M43 65Q50 61 57 65L50 72Z" fill="#111"/><path d="M50 72v5m-10 0q10 9 20 0" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg><img src="images/lab-logo.png" alt="Trustworthy and Secure AI Lab panda logo" onerror="this.hidden=true" onload="this.previousElementSibling.hidden=true"></span><span class="lab-logo-label">Trustworthy &amp; Secure AI Lab</span></div><div class="eyebrow">Sharif University of Technology</div><h1>Trustworthy<br>and <em>Secure AI.</em></h1><p class="lead">We study the risks of machine learning—and explore how to build AI systems we can trust.</p><div class="hero-links"><a class="button" href="#research">Explore our research</a><a href="#people">Meet the team →</a></div></div>
+<svg class="visual" viewBox="0 0 440 440" role="img" aria-labelledby="graphic-title"><title id="graphic-title">Abstract shield surrounded by a network of connected nodes</title><defs><linearGradient id="shield-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#087e78"/><stop offset="1" stop-color="#7661bd"/></linearGradient></defs><g fill="none" stroke="#087e78"><circle cx="220" cy="220" r="191" opacity=".12"/><circle cx="220" cy="220" r="150" opacity=".18" stroke-dasharray="4 10"/><ellipse cx="220" cy="220" rx="205" ry="90" transform="rotate(-35 220 220)" opacity=".15"/><g opacity=".25"><path d="M64 104 158 149M359 103 282 149M48 269 162 247M389 291 278 248M151 397 200 305M314 371 249 300"/></g></g><path d="M220 114 304 148V222C304 274 262 311 220 331C178 311 136 274 136 222V148Z" fill="#e7f5f0" stroke="url(#shield-gradient)" stroke-width="2"/><path d="M220 139 282 164V222C282 263 253 290 220 307C187 290 158 263 158 222V164Z" fill="none" stroke="#087e78" opacity=".23"/><path d="m184 222 25 25 49-54" fill="none" stroke="url(#shield-gradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><g fill="#087e78"><circle cx="64" cy="104" r="6"/><circle cx="359" cy="103" r="5"/><circle cx="48" cy="269" r="5"/><circle cx="389" cy="291" r="7"/><circle cx="151" cy="397" r="5"/></g><circle cx="314" cy="371" r="6" fill="#7661bd"/><g font-family="monospace" font-size="10" fill="#596a7e" letter-spacing="2"><text x="17" y="85">SECURITY</text><text x="303" y="80">PRIVACY</text><text x="250" y="408">TRUST</text></g></svg>
+</div><div class="hero-meta"><span>Security &amp; Privacy</span><span>Machine Learning</span><span>Tehran, Iran</span></div></div></div>
+<section id="about"><div class="wrap"><div class="section-kicker">01 / The lab</div><h2>About the Lab</h2><p class="lead">The Trustworthy and Secure AI Lab is based in the Department of Computer Engineering at Sharif University of Technology. Our research focuses on the security, privacy, and trustworthiness of machine learning systems. We study how these systems can fail or be attacked, how sensitive information can be exposed, and how principled defenses and careful evaluation can improve their reliability in practice.</p><address><strong>Location</strong><br>Room 503, Department of Computer Engineering<br>Sharif University of Technology, Tehran, Iran</address></div></section>
+<section id="research" class="soft"><div class="wrap"><div class="section-kicker">02 / Research directions</div><h2>Research Topics</h2><!-- Suggested topics: confirm and edit these to match the lab's active projects. --><div class="grid">
+<article class="card"><span class="number">01 / SECURITY</span><h3>Adversarial Machine Learning</h3><p>Studying adversarial examples and evaluating methods for improving robustness against malicious inputs.</p></article>
+<article class="card"><span class="number">02 / INTEGRITY</span><h3>Data Poisoning and Backdoors</h3><p>Investigating attacks on training data and model pipelines, along with methods for detection and mitigation.</p></article>
+<article class="card"><span class="number">03 / PRIVACY</span><h3>Privacy in Machine Learning</h3><p>Understanding information leakage through membership inference and model inversion, and exploring privacy-preserving learning.</p></article>
+</div></div></section>
+<section id="people"><div class="wrap"><div class="section-kicker">03 / Our team</div><h2>People</h2><h3>Principal Investigator</h3><article class="person"><div class="photo"><span>Portrait<br>Amir Mahdi Sadeghzadeh</span><img src="images/amir-mahdi-sadeghzadeh.jpg" alt="Amir Mahdi Sadeghzadeh" onerror="this.hidden=true"></div><div class="person-text"><h3>Amir Mahdi Sadeghzadeh</h3><p class="role">Assistant Professor</p><p>Department of Computer Engineering<br>Sharif University of Technology</p><p>I lead the Trustworthy and Secure AI Lab, where we study the security, privacy, and trustworthiness of artificial intelligence systems.</p><!-- Add verified email, personal website, and Google Scholar links here. --></div></article>
+<div class="group"><h3>PhD Students</h3><div class="grid"><!-- Duplicate this article for each PhD student. --><article class="card student"><div class="photo"><span>Student portrait</span><img src="images/phd-student-01.jpg" alt="PhD student portrait" onerror="this.hidden=true"></div><h3>[Student Name]</h3><p class="role">PhD Student</p><p>[Research interests]</p></article></div></div>
+<div class="group"><h3>Master's Students</h3><div class="grid"><!-- Duplicate this article for each master's student. --><article class="card student"><div class="photo"><span>Student portrait</span><img src="images/masters-student-01.jpg" alt="Master's student portrait" onerror="this.hidden=true"></div><h3>[Student Name]</h3><p class="role">Master's Student</p><p>[Research interests]</p></article></div></div>
+<div class="group"><h3>Undergraduate Students</h3><ul class="undergrads"><li>[Student Name] — [Research topic or project]</li><!-- Add one li element per student. --></ul></div>
+</div></section>
+<section id="publications" class="soft"><div class="wrap"><div class="section-kicker">04 / Research output</div><h2>Publications</h2><!-- Replace this template with real publications. Add actual links only when available. --><article class="publication"><h3>[Paper Title]</h3><p>[Authors]</p><p>[Conference or Journal], [Year]</p><p class="placeholder">[Add links to the paper and code repository]</p></article></div></section>
+<section id="teaching"><div class="wrap"><div class="section-kicker">05 / Learning</div><h2>Teaching</h2><article class="card"><h3>Security and Privacy in ML</h3><p>2026 · Sharif University of Technology</p><p><a href="/spml2026/">Course website →</a></p></article></div></section>
+<section id="join" class="soft"><div class="wrap"><div class="section-kicker">06 / Work with us</div><h2>Join the Lab</h2><p class="lead">We welcome interest from students who are curious about the security, privacy, and trustworthiness of artificial intelligence. Explore our research topics and publications to learn more about the questions we study.</p><p>Prospective graduate students should consult the official admission requirements of Sharif University of Technology and the Department of Computer Engineering. Undergraduate students interested in research projects are also welcome to explore our work.</p><p class="placeholder">[Add the lab's contact email, application instructions, and current openings here.]</p>
+<h3 style="margin-top:32px">Frequently Asked Questions</h3><!-- Complete these answers with the PI's actual policies before publication. Do not assume another lab's meeting or communication practices. -->
+<details><summary>How can I apply to join the lab?</summary><p>Review the university's admission requirements and the lab's research interests. [Add the application process, whether prospective students should email the supervisor, and the materials to submit.]</p></details>
+<details><summary>How often do students meet with the supervisor?</summary><p>[Specify the frequency and duration of individual meetings, and how students can ask for help between meetings.]</p></details>
+<details><summary>How are new research projects developed?</summary><p>[Describe how students propose ideas, receive feedback, and discuss projects during group or individual meetings.]</p></details>
+<details><summary>How does collaboration work in the lab?</summary><p>[Describe opportunities for collaboration within the lab and with external researchers, and how members support each other's work.]</p></details>
+<details><summary>What support does the supervisor provide during a project?</summary><p>[Describe support with problem formulation, experiment design, interpretation of results, and manuscript preparation, together with the student's responsibilities.]</p></details>
+<details><summary>What are the expectations regarding progress and deadlines?</summary><p>[Describe expectations for independent work, progress updates, planning, and communication about obstacles or delays.]</p></details>
+</div></section>
+</main><footer><div class="wrap">Trustworthy and Secure AI Lab · Department of Computer Engineering · Sharif University of Technology<br><a href="https://github.com/Trustworthy-and-Secure-AI-Lab">GitHub</a></div></footer>
+</body></html>
