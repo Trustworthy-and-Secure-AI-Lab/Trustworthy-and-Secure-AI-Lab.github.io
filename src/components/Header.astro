@@ -1,0 +1,88 @@
+---
+const navigation = [
+  {
+    "href": "/about/",
+    "label": "About"
+  },
+  {
+    "href": "/research/",
+    "label": "Research"
+  },
+  {
+    "href": "/people/",
+    "label": "People"
+  },
+  {
+    "href": "/publications/",
+    "label": "Publications"
+  },
+  {
+    "href": "/teaching/",
+    "label": "Teaching"
+  },
+  {
+    "href": "/join/",
+    "label": "Join Us"
+  }
+];
+---
+<header>
+      <div class="wrap">
+        <div class="nav">
+          <a class="brand" href="/"
+            ><span class="brand-mark"
+              ><svg viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="24" cy="24" r="16" fill="#111" />
+                <circle cx="76" cy="24" r="16" fill="#111" />
+                <ellipse
+                  cx="50"
+                  cy="55"
+                  rx="38"
+                  ry="36"
+                  fill="white"
+                  stroke="#111"
+                  stroke-width="3"
+                />
+                <ellipse
+                  cx="34"
+                  cy="51"
+                  rx="11"
+                  ry="15"
+                  transform="rotate(25 34 51)"
+                  fill="#111"
+                />
+                <ellipse
+                  cx="66"
+                  cy="51"
+                  rx="11"
+                  ry="15"
+                  transform="rotate(-25 66 51)"
+                  fill="#111"
+                />
+                <circle cx="36" cy="48" r="3" fill="white" />
+                <circle cx="64" cy="48" r="3" fill="white" />
+                <path d="M43 65Q50 61 57 65L50 72Z" fill="#111" />
+                <path
+                  d="M50 72v5m-10 0q10 9 20 0"
+                  fill="none"
+                  stroke="#111"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                /></svg
+              ><img
+                src="/images/lab-logo.png"
+                alt=" Lab panda logo"
+                onerror="this.hidden = true"
+                onload="
+                  this.previousElementSibling.style.display = 'none'
+                " /></span
+            ><span class="brand-copy"><span class="brand-name">TSAIL</span><span class="brand-university">Sharif University of Technology</span></span></a
+          >
+          <nav aria-label="Main navigation">
+            {navigation.map(({ href, label }) => (
+              <a href={href} aria-current={Astro.url.pathname === href ? 'page' : undefined}>{label}</a>
+            ))}
+          </nav>
+        </div>
+      </div>
+    </header>

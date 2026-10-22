@@ -1,0 +1,29 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+<SiteLayout title="Teaching">
+  <section id="teaching">
+    <div class="wrap">
+      <h1 class="section-title">Teaching</h1>
+      <div class="courses">
+        <article class="card">
+          <h3>Security and Privacy in ML</h3>
+          <p>Fall 2026</p>
+          <p><a href="https://trustworthy-and-secure-ai-lab.github.io/SPML2026/">Course website &rarr;</a></p>
+        </article>
+        <article class="card">
+          <h3>Artificial Intelligence in Cybersecurity</h3>
+          <p>Spring 2027</p>
+          <p>Coming soon</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .courses {
+    display: grid;
+    gap: 20px;
+  }
+</style>

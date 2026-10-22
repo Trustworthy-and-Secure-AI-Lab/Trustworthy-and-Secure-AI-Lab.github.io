@@ -1,0 +1,39 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+<SiteLayout title="About the Lab">
+  <section id="about">
+    <div class="wrap">
+      <div class="about-content">
+        <h1 class="section-title">About the Lab</h1>
+        <p class="lead">
+          The Trustworthy and Secure AI Lab focuses on the security, privacy, and trustworthiness of
+          machine learning systems. We study how these systems can fail or be
+          attacked, how sensitive information can be exposed, and how
+          principled defenses and careful evaluation can improve their
+          reliability in practice. We also explore applications of artificial
+          intelligence in cybersecurity, investigating how AI can help
+          strengthen security.
+        </p>
+        <address>
+          <strong>Location</strong><br />
+          Room 503, Department of Computer Engineering<br />
+          Sharif University of Technology, Tehran, Iran
+        </address>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .about-content {
+    max-width: 790px;
+  }
+  .lead {
+    margin: 0;
+    line-height: 1.9;
+  }
+  address {
+    margin-top: 36px;
+  }
+</style>

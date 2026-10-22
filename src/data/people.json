@@ -1,0 +1,49 @@
+[
+  {
+    "title": "PhD Students",
+    "id": "phd-students",
+    "students": [
+      {
+        "name": "Arman Shamsi",
+        "topic": "AI Agent Security",
+        "photo": ""
+      },
+      {
+        "name": "Zahra Arani",
+        "topic": "Jailbreak Multimodal Generative Models",
+        "photo": ""
+      }
+    ]
+  },
+  {
+    "title": "Master's Students",
+    "id": "masters-students",
+    "students": [
+      {
+        "name": "Sajjad Vaezi",
+        "topic": "Multi-Agent Systems Security; AI for Cybersecurity",
+        "photo": ""
+      },
+      {
+        "name": "Javad Hezare",
+        "topic": "Understanding Refusal Mechanism in LLMs",
+        "photo": ""
+      },
+      {
+        "name": "Arian Komaei",
+        "topic": "Unlearning Methods",
+        "photo": ""
+      },
+      {
+        "name": "Arshin Kafi",
+        "topic": "Automated AI Agent Red-Teaming",
+        "photo": ""
+      }
+    ]
+  },
+  {
+    "title": "Undergraduate Students",
+    "id": "undergraduate-students",
+    "students": []
+  }
+]

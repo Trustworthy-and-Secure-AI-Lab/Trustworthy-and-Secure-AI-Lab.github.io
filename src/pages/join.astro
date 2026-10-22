@@ -1,0 +1,55 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+<SiteLayout title="Join the Lab">
+  <section id="join" class="soft">
+    <div class="wrap">
+      <h1 class="section-title">Join the Lab</h1>
+      <p class="lead">
+        Our lab welcomes students interested in AI safety and security.
+        We also explore how artificial intelligence can be used to strengthen
+        cybersecurity. Explore our research topics and publications to learn
+        more about the questions we study.
+      </p>
+      <div class="join-faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <details>
+          <summary>How can I apply to work with the lab?</summary>
+          <div class="faq-answer">
+            <p>To express your interest in working with the lab, please contact us at either of the following email addresses:</p>
+            <ul class="contact-emails">
+              <li><a href="mailto:sadeghzadeh@sharif.edu">sadeghzadeh@sharif.edu</a></li>
+              <li><a href="mailto:amsadeghzadeh@gmail.com">amsadeghzadeh@gmail.com</a></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+</SiteLayout>
+
+<style>
+  .join-faq {
+    max-width: 790px;
+    margin-top: 44px;
+  }
+  .join-faq h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 650;
+    letter-spacing: -0.025em;
+  }
+  .faq-answer {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .contact-emails {
+    display: grid;
+    gap: 6px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    overflow-wrap: anywhere;
+  }
+</style>
