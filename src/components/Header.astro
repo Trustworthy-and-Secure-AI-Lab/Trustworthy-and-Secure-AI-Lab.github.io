@@ -70,7 +70,7 @@ const navigation = [
                   stroke-linecap="round"
                 /></svg
               ><img
-                src="/images/lab-logo.png"
+                src="/images/lab-logo.png" width="44" height="44"
                 alt=" Lab panda logo"
                 onerror="this.hidden = true"
                 onload="
@@ -78,7 +78,11 @@ const navigation = [
                 " /></span
             ><span class="brand-copy"><span class="brand-name">TSAIL</span><span class="brand-university">Sharif University of Technology</span></span></a
           >
-          <nav aria-label="Main navigation">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+            Menu
+          </button>
+          <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
             {navigation.map(({ href, label }) => (
               <a href={href} aria-current={Astro.url.pathname === href ? 'page' : undefined}>{label}</a>
             ))}
@@ -86,3 +90,53 @@ const navigation = [
         </div>
       </div>
     </header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('header');
+  const row = header?.querySelector<HTMLElement>('.nav');
+  const brand = header?.querySelector<HTMLElement>('.brand');
+  const toggle = header?.querySelector<HTMLButtonElement>('.nav-toggle');
+  const navigation = header?.querySelector<HTMLElement>('.primary-nav');
+  if (header && row && brand && toggle && navigation) {
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      navigation.classList.toggle('is-open', open);
+    };
+    const updateLayout = () => {
+      const wasCompact = header.classList.contains('nav-compact');
+      header.classList.add('nav-measuring');
+      const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
+      const requiredWidth = brand.getBoundingClientRect().width + navigation.getBoundingClientRect().width + gap;
+      header.classList.remove('nav-measuring');
+      const compact = row.clientWidth < requiredWidth;
+      header.classList.toggle('nav-compact', compact);
+      if (compact !== wasCompact) {
+        setOpen(false);
+        if (compact && navigation.contains(document.activeElement)) toggle.focus();
+        if (!compact && document.activeElement === toggle) navigation.querySelector<HTMLAnchorElement>('a')?.focus();
+      }
+    };
+    header.classList.add('nav-ready');
+    updateLayout();
+    let lastWidth = -1;
+    new ResizeObserver(([entry]) => {
+      if (entry.contentRect.width === lastWidth) return;
+      lastWidth = entry.contentRect.width;
+      updateLayout();
+    }).observe(row);
+    document.fonts.ready.then(updateLayout);
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+    header.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    header.addEventListener('focusout', event => {
+      if (event.relatedTarget instanceof Node && !header.contains(event.relatedTarget)) setOpen(false);
+    });
+    document.addEventListener('click', event => {
+      if (event.target instanceof Node && !header.contains(event.target)) setOpen(false);
+    });
+  }
+</script>
