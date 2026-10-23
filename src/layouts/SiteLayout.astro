@@ -5,15 +5,15 @@ import '../styles/global.css';
 interface Props {
   title?: string;
 }
-const { title } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/images/lab-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Trustworthy and Secure AI Lab at the Department of Computer Engineering, Sharif University of Technology." />
-    <title>{title ? title + ' | TSAIL | Sharif' : 'TSAIL | Sharif'}</title>
+    <title>Trustworthy and Secure AI Lab</title>
   </head>
   <body>
     <a href="#main" class="skip">Skip to content</a>
