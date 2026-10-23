@@ -104,7 +104,6 @@ address strong { color: var(--ink); }
 .hero { position: relative; padding-block: var(--space-6); border-bottom: 1px solid var(--line); background: radial-gradient(ellipse at 85% 40%, #d9f2eb55, transparent 60%), radial-gradient(ellipse at 15% 5%, #ece8f633, transparent 50%), #f9fcfd; }
 .hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(#182b4003 1px, transparent 1px), linear-gradient(90deg, #182b4003 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to bottom, black, transparent); }
 .hero-layout { position: relative; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--space-5); align-items: center; }
-.home-affiliation { margin-bottom: var(--space-3); color: var(--muted); font-size: var(--text-sm); font-weight: 500; line-height: 1.7; text-wrap: pretty; }
 .hero-links { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
 .visual { display: block; width: 100%; height: auto; max-width: 400px; justify-self: center; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--line); color: var(--muted); font-size: var(--text-sm); line-height: 1.7; }
